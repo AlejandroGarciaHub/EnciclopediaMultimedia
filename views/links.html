@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Links</title>
+		<link type='text/css' rel='stylesheet' href='../css/custom.css'/>
+	</head>
+	<body class="background-green">
+		<div id='inner'>
+			<center>
+				<h1 class="blanco">Enlaces</h1>
+			</center>
+
+			<center>
+						<img class="round-border"  style="margin-bottom:3%;" src="../resources/imgs/links_logo.gif" alt="" width="400">
+			</center>
+
+      <div id="texto-inner" class=" background-blanco links round-border">
+        [Edutech Wiki, 2016] Flash frame-by-frame animation, recuperado de <a href="http://edutechwiki.unige.ch/en/Flash_frame-by-frame_animation_tutorial">http://edutechwiki.unige.ch/en/Flash_frame-by-frame_animation_tutorial</a> (2017)
+      </div>
+
+			<div id="texto-inner" class=" background-blanco links round-border">
+				[Toon Boom, 2017] Morphing, recuperado de  <a href="https://www.toonboom.com/resources/video-tutorials/chapter/morphing ">https://www.toonboom.com/resources/video-tutorials/chapter/morphing</a> (2017)
+			</div>
+
+			<div id="texto-inner" class=" background-blanco links round-border">
+				[Juan Za, 2007] La animación sociocultural. Técnicas de animación y calentamiento global, recuperado de   <a href="https://animacionsociocultural.wordpress.com/category/tecnicas-de-animacion/">https://animacionsociocultural.wordpress.com/category/tecnicas-de-animacion/ </a> (2017)
+			</div>
+
+			<div id="texto-inner" class=" background-blanco links round-border">
+				[Randhal, 2015] Anima23d. Diferencias entre la animación 3D y 2D mediante la tecnología, recuperado de <a href="https://anima23d.wordpress.com/2015/10/08/diferencias-entre-la-animacion-3d-y-2d-mediante-la-tecnologia/">https://anima23d.wordpress.com/2015/10/08/diferencias-entre-la-animacion-3d-y-2d-mediante-la-tecnologia/</a> (2017)
+			</div>
+
+			<div id="texto-inner" class=" background-blanco links round-border">
+				[Aula Virtual, 2015] Creación de animaciones 3D con Blender, recuperado de <a href="https://educacionadistancia.juntadeandalucia.es/profesorado/autoformacion/course/view.php?id=78">https://educacionadistancia.juntadeandalucia.es/profesorado/autoformacion/course/view.php?id=78</a> (2017)
+			</div>
+
+			<div id="texto-inner" class=" background-blanco links round-border">
+				[CristaLab, 2004] Tutorial de animación y expresión de personajes en Flash, recuperado de <a href="http://www.cristalab.com/tutoriales/tutorial-de-animacion-y-expresion-de-personajes-en-flash-c67l/">http://www.cristalab.com/tutoriales/tutorial-de-animacion-y-expresion-de-personajes-en-flash-c67l/</a> (2017)
+			</div>
+
+			<div style="height:50px;">
+
+			</div>
+
+
+
+			<div class="bottom" text-align="center">
+
+		    <div class="" align="right" style="margin-right:5%;">
+		      <img id="atras" src="../resources/imgs/nav/back.png" alt="" width="60">
+		  <!--          <button class="btn btn-large btn-negative">
+		        Salir
+		    </button>
+		  -->
+		  </div>
+
+		  </div>
+
+    	</div>
+
+		<script type='text/javascript' src='../js/jquery-1.9.min.js'></script>
+		<script type="text/javascript" src='questions.json'></script>
+		<script type='text/javascript' src='../js/quiz.js'></script>
+
+		<script>
+
+	    var ipcRenderer = require('electron').ipcRenderer;
+	    var btnAtras = document.querySelector('#atras')
+
+	    btnAtras.addEventListener('click', function (e) {
+	     e.preventDefault()
+	     ipcRenderer.send('atras')
+	    })
+
+
+	  </script>
+
+	</body>
+</html>

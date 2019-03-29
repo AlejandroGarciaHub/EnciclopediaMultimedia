@@ -1,0 +1,237 @@
+.tab-item-custom {
+  flex: 1;
+  padding: 3px;
+  font-size: 12px;
+  text-align: center;
+  border-left: 1px solid #989698;
+  background-color: #024959;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #024959), color-stop(100%, #024959));
+  background-image: -webkit-linear-gradient(top, #024959 0%, #024959 100%);
+  background-image: linear-gradient(to bottom, #024959 0%, #024959 100%);
+}
+
+.tab-item-custom-2 {
+  flex: 1;
+  padding: 3px;
+  font-size: 12px;
+  text-align: center;
+  border-left: 1px solid #989698;
+  background-color: #42A48D;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #42A48D), color-stop(100%, #42A48D));
+  background-image: -webkit-linear-gradient(top, #42A48D 0%, #42A48D 100%);
+  background-image: linear-gradient(to bottom, #42A48D 0%, #42A48D 100%);
+}
+
+.window{
+/*  background-color: #C9283E; */
+    background-color: #820333;
+}
+
+
+.bottom{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.center-div{
+  width: 650px;
+  margin: 0 auto;
+}
+
+.center-logo{
+  width: 32%;
+  margin: 0 auto;
+  margin-top: 1%!important;
+  margin-right: 37%;
+}
+
+.center-slide{
+  margin-left: 14%;
+}
+
+.btn-custom {
+ font-family: Arial,Helvetica,sans-serif;
+ font-size: 20px;
+}
+
+.texto-slide {
+ font-family: Arial,Helvetica,sans-serif;
+ font-weight: bold;
+ font-size: 20px!important;
+}
+.title-blanco{
+  color: white!important;
+  text-align: center;
+}
+
+img.menu-img{
+  width: 100px;
+  height: auto;
+  align: top;
+}
+.slideshow-container{
+    width: 65%;
+}
+
+.background-green{
+  background-color: #00897b;
+  overflow: auto;
+}
+.background-blanco{
+  background-color: white;
+}
+.blanco{
+  color: white;
+}
+.negro{
+  color: black;
+}
+
+.round-border{
+  border-radius: 10px;
+}
+
+.background-wine{
+  background-color: #820333;
+}
+
+.background-blue{
+  background-color: blue;
+}
+
+.menu-identar{
+  margin-top:10%;
+  margin-left:10%;
+}
+
+.titulo-top{
+  margin-left:10%;
+  margin-top:1%;
+  margin-right:5%;
+}
+
+.well-small{
+  background-color: white;
+  color: black;
+  border-radius: 10%;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+.div-inner-text {
+ font-family: Arial,Helvetica,sans-serif;
+ font-weight: bold;
+ font-size: 20px!important;
+ text-align: justify;
+ text-justify: inter-word;
+ white-space: pre-wrap;
+ padding: 15px;
+ margin-right: 3%;
+}
+
+.div-inner-text-2 {
+ font-family: Arial,Helvetica,sans-serif;
+ font-weight: bold;
+ font-size: 20px!important;
+ text-align: justify;
+ text-justify: inter-word;
+ white-space: pre-wrap;
+ padding: 5px;
+ margin-right: 3%;
+}
+
+.justificar {
+ text-align: justify;
+ text-justify: inter-word;
+}
+
+.imagen-descriptiva{
+  margin-left:25%;
+  margin-right:25%;
+  margin-top:5%;
+  padding: 15px;
+}
+
+.font-subtitulo{
+  font-size: 22px;
+}
+
+
+.well-medium{
+  background-color: white;
+  color: black;
+  border-radius: 10%;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.texto-vertical-1 {
+    writing-mode: vertical-lr;
+    position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      -webkit-transform: translateY(80%);
+    font-size: 20px;
+}
+
+.texto-vertical-2 {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+}
+
+.top{
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.integrantes {
+  width: 450px;
+  font-size: 17px;
+  }
+
+  .titulo-creditos{
+
+    font-size: 4px;
+    font-family: "Arial Black", sans-serif;
+  }
+
+
+  video::-webkit-media-controls-fullscreen-button {
+    display: none;
+}
+
+.links{
+ font-family: Arial,Helvetica,sans-serif;
+ font-weight: bold;
+ font-size: 20px!important;
+ margin-top: 10px;
+ padding: 10px;
+}
+
+
+.glosario{
+ font-family: Arial,Helvetica,sans-serif;
+ font-weight: bold;
+ font-size: 15px!important;
+ margin-top: 10px;
+ padding: 10px;
+}
+
+.well-small-2{
+  background-color: white;
+  color: black;
+  border-radius: 10%;
+  margin-left: 5%;
+  margin-right: 80%;
+}
+
+.size-imagen{
+  width: 530px;
+  height: 320px;
+}
+
+.size-texto-menu{
+  font-size: 55px;
+}

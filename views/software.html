@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Software</title>
+
+    <link rel="stylesheet" href="../css/photon.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/custom.css">
+  </head>
+  <body class="background-green">
+
+    <div class="" style="margin-left:10%; margin-right:10%; margin-top:2%;">
+
+      <center>
+        <div class="well">
+          <h2>Software</h2>
+        </div>
+      </center>
+
+
+      <div class="background-blanco round-border" style="padding:5px;">
+
+        <h3>Blender <img src="../resources/imgs/soft/blender.png" alt="" style="margin-left:36%;" width="120"></h3>
+        <hr>
+        <div class="justificar" style="font-size:18px;">
+          Blender es un programa informático multi plataforma, dedicado especialmente al modelado, iluminación, renderizado, animación y creación de gráficos tridimensionales. También de composición digital utilizando la técnica procesal de nodos, edición de vídeo, escultura (incluye topología dinámica) y pintura digital. En Blender, además, se pueden desarrollar vídeo juegos ya que posee un motor de juegos interno.  </div>
+          <div style="font-size:18px;">
+          <a href="https://www.blender.org/">https://www.blender.org/</a>
+        </div>
+        <hr>
+
+        <h3>Unity <img src="../resources/imgs/soft/unity.png" alt="" style="margin-left:39%;" width="120"></h3>
+        <hr>
+        <div class="justificar" style="font-size:18px;">
+      Unity es un motor de videojuego multiplataforma creado por Unity Technologies. Unity está disponible como plataforma de desarrollo para Microsoft Windows, OS X, Linux. La plataforma de desarrollo tiene soporte de compilación con diferentes tipos de plataformas (Véase la sección Plataformas objetivo). A partir de su versión 5.4.0 ya no soporta el desarrollo de contenido para navegador a través de su plugin web, en su lugar se utiliza WebGL. Unity tiene dos versiones: Unity Professional (pro) y Unity Personal.</div>
+          <div style="font-size:18px;">
+          <a href="https://unity3d.com/es/">https://unity3d.com/es/</a>
+        </div>
+        <hr>
+
+        <h3>Adobe Animate <img src="../resources/imgs/soft/adobe-animate.png" alt="" style="margin-left:28%;" width="120"></h3>
+        <hr>
+        <div class="justificar" style="font-size:18px;">
+        Adobe Animate (anteriormente como Adobe Flash Professional, Macromedia Flash, y FutureSplash Animator) que recibe uno de los programas más famosos de la casa Adobe, junto con sus hermanos Adobe Illustrator y Adobe Photoshop. Se trata de una aplicación de creación y manipulación de gráficos vectoriales con posibilidades de manejo de código mediante un lenguaje de scripting llamado ActionScript. Animate es un estudio de animación que trabaja sobre "fotogramas" y está destinado a la producción y entrega de contenido interactivo para diferentes audiencias de todo el mundo sin importar la plataforma.
+      </div>
+        <div style="font-size:18px;">
+          <a href="http://www.adobe.com/es/products/animate.html">http://www.adobe.com/es/products/animate.html</a>
+        </div>
+        <hr>
+
+        <h3>Unreal Engine <img src="../resources/imgs/soft/unreal-engine.png" alt="" style="margin-left:28%;" width="120"></h3>
+        <hr>
+        <div class="justificar" style="font-size:18px;">
+          Unreal Engine es un motor de juego de PC y consolas creado por la compañía Epic Games, demostrado inicialmente en el shooter en primera persona Unreal en 1998, y siendo la base de juegos como Unreal Tournament, Deus Ex, Turok, Tom Clancy's Rainbow Six: Vegas, America's Army, Red Steel, Gears of War, BioShock, BioShock 2, BioShock Infinite, Star Wars Republic Commando, Batman: Arkham Asylum, SMITE o Mass Effect. También se ha utilizado en otros géneros como el rol y juegos de perspectiva en tercera persona.
+        </div>
+        <div style="font-size:18px;">
+          <a href="http://www.unrealengine.com/">http://www.unrealengine.com/</a>
+        </div>
+        <hr>
+
+        <h3>After Effects <img src="../resources/imgs/soft/after.png" alt="" style="margin-left:30%;" width="120"></h3>
+        <hr>
+        <div class="justificar" style="font-size:18px;">
+          Adobe After Effects es una aplicación que tiene forma de estudio destinado para la creación o aplicación en una composición, así como realización de gráficos profesionales en movimiento y efectos especiales, que desde sus raíces han consistido básicamente en la superposición de capas. Adobe After Effects es uno los softwares basados en línea de tiempo más potentes del mercado junto con Autodesk Combustion y Eyeon Fusion.
+        </div>
+        <div class="justificar" style="font-size:18px;">
+          Una de las principales fortalezas del programa es que existen una gran cantidad de plugins desarrollados por otras compañías que ayudan a aligerar las cargas de trabajo en lo que a aplicación de efectos se refiere. A partir de las versiones 6.5 y 7 mejora su capacidad para manejar archivos de gráficos y vídeo de distintos formatos. Por otro lado, su interfaz resulta familiar a muchos editores dedicados a la post-producción, lo que lo convierte en la elección ideal para la mayoría de profesionales.
+        </div>
+        <div style="font-size:18px;">
+          <a href="http://www.adobe.com/es/products/aftereffects.html">http://www.adobe.com/es/products/aftereffects.html</a>
+        </div>
+        <hr>
+
+      </div>
+
+      <div class="" style="height:50px;">
+
+      </div>
+
+      <div class="bottom" text-align="center">
+
+        <div class="" align="right" style="margin-right:15%;">
+          <img id="atras" src="../resources/imgs/nav/back.png" alt="" width="60">
+      <!--          <button class="btn btn-large btn-negative">
+            Salir
+        </button>
+      -->
+      </div>
+
+      </div>
+
+    </div>
+
+  </body>
+
+  <script>
+
+    var ipcRenderer = require('electron').ipcRenderer;
+    var btnAtras = document.querySelector('#atras')
+
+    btnAtras.addEventListener('click', function (e) {
+     e.preventDefault()
+     ipcRenderer.send('atras')
+    })
+
+
+  </script>
+
+</html>

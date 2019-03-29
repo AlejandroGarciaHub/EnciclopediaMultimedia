@@ -1,0 +1,14 @@
+{
+  "dest": "../release-builds/debian-build",
+  "icon": "resources/icons/png/64x64.png",
+  "name": "enciclopedia-animacion",
+  "productName": "Animación: Enciclopedia Multimedia",
+  "categories": [
+    "Utility",
+    "GNOME",
+    "GTK"
+  ],
+  "lintianOverrides": [
+    "changelog-file-missing-in-native-package"
+  ]
+}

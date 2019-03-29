@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ayuda</title>
+
+    <link rel="stylesheet" href="../css/photon.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/custom.css">
+  </head>
+  <body class="background-green">
+
+    <div class="" style="margin-left:10%; margin-right:10%; margin-top:2%;">
+
+      <center>
+        <div class="well">
+          <h2>Ayuda</h2>
+        </div>
+      </center>
+
+
+      <div class="background-blanco round-border" style="padding:5px;">
+
+        <h3><img src="../resources/imgs/menu/2d.gif" alt="" width="80">Animación 2D</h3>
+        <hr>
+        <div style="font-size:18px;">
+          En la sección indicada con el icono anterior se puede consultar la información referente a la animación 2D.
+        </div>
+        <hr>
+
+        <h3 style="margin-left:2%;"><img style="margin-right:1.5%;" src="../resources/imgs/menu/3d.png" alt="" width="50">Animación 2D</h3>
+        <hr>
+        <div style="font-size:18px;">
+          Este icono indica la sección de animación 3D y todo lo referente a esta.
+        </div>
+        <hr>
+
+        <h3><img src="../resources/imgs/menu/morphing.gif" alt="" width="80">Morphing</h3>
+        <hr>
+        <div style="font-size:18px;">
+          La sección representada por este icono corresponde a las transformaciones morfologicas que engloban al morphing.
+        </div>
+        <hr>
+
+        <h3 style="margin-left:2%;"><img style="margin-right:1.5%;" src="../resources/imgs/menu/herramientas.png" alt="" width="40">Software</h3>
+        <hr>
+        <div style="font-size:18px;">
+          Este icono indica la seccion de software, en donde se econtrará información referente a distintas herramientas con capacidades de animación.
+        </div>
+        <hr>
+
+        <h3 style="margin-left:2%;"><img style="margin-right:1.5%;" src="../resources/imgs/menu/help.png" alt="" width="40">Ayuda</h3>
+        <hr>
+        <div style="font-size:18px;">
+          Icono asociado a esta sección (ayuda).
+        </div>
+        <hr>
+
+        <h3><img src="../resources/imgs/menu/test.gif" alt="" width="80">Test</h3>
+        <hr>
+        <div style="font-size:18px;">
+          La sección indicada con este icono presenta al usuario una prueba de conocimiento con el fin de repasar lo aprendido en la enciclopedia.
+        </div>
+        <hr>
+
+        <h3 style="margin-left:2%;"><img style="margin-right:1.5%;" src="../resources/imgs/menu/link.png" alt="" width="40">Links</h3>
+        <hr>
+        <div style="font-size:18px;">
+          Con el fin de complementar lo mostrado en esta enciclopedia, se anexan una serie de enlaces con información asociada a lo visto ya aqui.
+          </div>
+        <hr>
+
+        <h3 style="margin-left:2%;"><img style="margin-right:1.5%;" src="../resources/imgs/menu/glosario.png" alt="" width="40">Glosario</h3>
+        <hr>
+        <div style="font-size:18px;">
+          Apartado que contiene y recopila conceptos relevantes altamente asociados al tema, los cuales pueden llegar a ser tema de repaso para su mejor asimiliación.</div>
+        <hr>
+
+        <h3 style="margin-left:2%;"><img style="margin-right:1.5%;" src="../resources/imgs/menu/creditos.png" alt="" width="40">Creditos</h3>
+        <hr>
+        <div style="font-size:18px;">
+          Información referente al equipo de trabajo y el proceso creativo de desarrollo de la herramienta.  </div>
+        <hr>
+
+        <h3 style="margin-left:2%;"><img style="margin-right:1.5%;" src="../resources/imgs/menu/exit.png" alt="" width="40">Salir</h3>
+        <hr>
+        <div style="font-size:18px;">
+          Este boton en particular permite salir de la enciclopedia tras haber terminado una sesión de uso.
+          </div>
+        <hr>
+
+        <h3 style="margin-left:2%;"><img style="margin-right:1.5%;" src="../resources/imgs/nav/back.png" alt="" width="40">Regresar</h3>
+        <hr>
+        <div style="font-size:18px;">
+          Boton que permite volver a la pantalla anterior, es decir el menu principal.
+          </div>
+        <hr>
+
+        <h3 style="margin-left:2%;"><img style="margin-right:1.5%;" src="../resources/imgs/nav/left.png" alt="" width="40">Atras</h3>
+        <hr>
+        <div style="font-size:18px;">
+            Este boton dentro de la sección de TEST permite volver a la pregunta anterior.
+          </div>
+        <hr>
+
+
+        <h3 style="margin-left:2%;"><img style="margin-right:1.5%;" src="../resources/imgs/nav/right.png" alt="" width="40">Adelante</h3>
+        <hr>
+        <div style="font-size:18px;">
+          Este boton dentro de la sección de TEST permite ir a la siguiente pregunta.
+          </div>
+        <hr>
+
+        <h3 style="margin-left:2%;"><img style="margin-right:1.5%;" src="../resources/imgs/nav/reload.png" alt="" width="40">Reintentar</h3>
+        <hr>
+        <div style="font-size:18px;">
+            Este boton dentro de la sección de TEST permite volver realizar el TEST.
+          </div>
+        <hr>
+
+      </div>
+
+      <div class="" style="height:50px;">
+
+      </div>
+
+      <div class="bottom" text-align="center">
+
+        <div class="" align="right" style="margin-right:15%;">
+          <img id="atras" src="../resources/imgs/nav/back.png" alt="" width="60">
+      <!--          <button class="btn btn-large btn-negative">
+            Salir
+        </button>
+      -->
+      </div>
+
+      </div>
+
+    </div>
+
+  </body>
+
+  <script>
+
+    var ipcRenderer = require('electron').ipcRenderer;
+    var btnAtras = document.querySelector('#atras')
+
+    btnAtras.addEventListener('click', function (e) {
+     e.preventDefault()
+     ipcRenderer.send('atras')
+    })
+
+
+  </script>
+
+</html>

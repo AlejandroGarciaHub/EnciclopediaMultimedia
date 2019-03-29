@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <link rel="stylesheet" href="../../css/nav.css">
+    <link rel="stylesheet" href="../../css/photon.min.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/custom.css">
+
+  </head>
+  <body>
+
+    <header class="toolbar toolbar-header">
+      <h1 class="title">Animacion 2D y 3D: Enciclopedia Multimedia</h1>
+    </header>
+    <div id="wrapper" class="active background-green">
+        <!-- Sidebar -->
+                <!-- Sidebar -->
+        <div id="sidebar-wrapper" style="margin-top:4%;" class="round-border">
+            <ul id="sidebar_menu" class="sidebar-nav menu-identar">
+               <li class="sidebar-bran"><a id="menu-toggle" href="#">Menu</a></li>
+               <br>
+            </ul>
+
+            <ul class="sidebar-nav blanco menu-identar" id="sidebar">
+              <li class="background-green blanco">Fundamentos
+                <ul class="sidebar-nav blanco">
+                  <li ><a href="#" id='teoria'><span class="glyphicon glyphicon-asterisk"></span>Intro</a></li>
+                  <li ><a href="#" id="tecnicas"><span class="glyphicon glyphicon-asterisk"></span>Tecnicas</a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <ul class="sidebar-nav blanco menu-identar" id="sidebar">
+              <li class="background-green blanco">Demostraciones
+                <ul class="sidebar-nav blanco">
+                  <li ><a href="#" id="ejemplos"><span class="glyphicon glyphicon-asterisk"></span>Ejemplos</a></li>
+                  <li ><a href="#" id="videos"><span class="glyphicon glyphicon-asterisk"></span>Videos</a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <ul class="sidebar-nav blanco menu-identar" id="sidebar">
+              <li class="background-green blanco">Guia
+                <ul class="sidebar-nav blanco">
+                  <li><a href="#" id="crear"><span class="glyphicon glyphicon-asterisk"></span>Creación</a></li>
+                </ul>
+              </li>
+            </ul>
+
+
+          </div>
+
+          <!-- Contenido-->
+          <div id="contenido">
+
+
+
+
+          </div>
+
+          <div class="bottom" text-align="center">
+
+            <div class="" align="right" style="margin-right:15%;">
+              <img id="atras" src="../../resources/imgs/nav/back.png" alt="" width="60">
+          <!--          <button class="btn btn-large btn-negative">
+                Salir
+            </button>
+          -->
+          </div>
+
+          </div>
+
+    </div>
+
+
+  </body>
+  <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+    <!-- normal script imports etc  -->
+    <script src="../../js/jquery.min.js"></script>
+<!--    <script src="../../js/custom.js"></script>  -->
+
+    <!-- Insert this line after script imports -->
+    <script>if (window.module) module = window.module;</script>
+
+  <script>
+
+    var ipcRenderer = require('electron').ipcRenderer;
+    var btnAtras = document.querySelector('#atras')
+
+    btnAtras.addEventListener('click', function (e) {
+     e.preventDefault()
+     ipcRenderer.send('atras')
+    })
+
+
+  </script>
+
+  <script type="text/javascript">
+    $(function(){
+      $("#contenido").load("3d/teoria.html");
+    });
+
+    var btnTeoria = document.querySelector('#teoria')
+    var btnTecnica = document.querySelector('#tecnicas')
+    var btnVideos = document.querySelector('#videos')
+    var btnEjemplos = document.querySelector('#ejemplos')
+    var btnCrear = document.querySelector('#crear')
+
+    function mostrar() {
+        const tipo=$('#titulo').attr('value')
+
+        const BrowserWindow = require('electron').remote.BrowserWindow
+        const path = require('path')
+        const url = require('url')
+
+
+      let win;
+
+      win = new BrowserWindow({
+    //    width: 1250,
+        width: 460,
+        height: 300,
+        center: true,
+        'min-width': 500,
+        'min-height': 200,
+        'accept-first-mouse': true,
+        'title-bar-style': 'hidden'
+      });
+
+      win.loadURL(url.format({
+        pathname: path.join(__dirname, '../res/3d.html'),
+        protocol: 'file:',
+        slashes: true
+      }))
+      win.setResizable(false)
+      win.show()
+
+      }
+
+
+    btnTeoria.addEventListener('click', function (e) {
+      const tipo=$('#titulo').attr('value')
+      console.log(tipo);
+     e.preventDefault()
+     $("#contenido").load(""+tipo+"/teoria.html");
+    })
+
+
+    btnTecnica.addEventListener('click', function (e) {
+      const tipo=$('#titulo').attr('value')
+      console.log(tipo);
+     e.preventDefault()
+     $("#contenido").load(""+tipo+"/tecnicas.html");
+    })
+
+    btnVideos.addEventListener('click', function (e) {
+      const tipo=$('#titulo').attr('value')
+      console.log(tipo);
+     e.preventDefault()
+     $("#contenido").load(""+tipo+"/videos.html");
+    })
+
+    btnEjemplos.addEventListener('click', function (e) {
+      const tipo=$('#titulo').attr('value')
+      console.log(tipo);
+     e.preventDefault()
+     $("#contenido").load(""+tipo+"/imagenes.html");
+    })
+
+    btnCrear.addEventListener('click', function (e) {
+      const tipo=$('#titulo').attr('value')
+      console.log(tipo);
+     e.preventDefault()
+     $("#contenido").load(""+tipo+"/crear.html");
+    })
+
+  </script>
+
+</html>

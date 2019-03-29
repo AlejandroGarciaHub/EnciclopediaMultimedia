@@ -1,19 +1,264 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <title>Hello World!</title>
+    <title>Enciclopedia Multimedia: Animación</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/photon.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/slideshow.css">
+
+    <!-- Javascript -->
   </head>
   <body>
-    <h1>Hello World!</h1>
-    <!-- All of the Node.js APIs are available in this renderer process. -->
-    We are using Node.js <script>document.write(process.versions.node)</script>,
-    Chromium <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
+    <div class="window">
 
-    <script>
-      // You can also require other files to run in this process
-      require('./renderer.js')
-    </script>
+      <!-- .toolbar-header sits at the top of your app -->
+
+      <header class="toolbar toolbar-header">
+        <h1 class="title">Enciclopedia Multimedia: Animación</h1>
+      </header>
+
+      <div class="inner">
+
+        <center>
+          <div class="">
+            <img class="" src="resources/imgs/menu/menu.png" alt="" width="120px">
+          </div>
+        </center>
+        <div class="tab-group">
+
+          <div class="tab-item-custom">
+                  <img class="" src="resources/imgs/menu/2d-2.gif" alt="" width="60px">
+                  <button id="animacion_2d" class="btn btn-large btn-default btn-custom">
+                      Animación 2D
+                  </button>
+          </div>
+          <div class="tab-item-custom-2">
+            <img src="resources/imgs/menu/3d.png" alt="" width="50px">
+            <button id="animacion_3d" class="btn btn-large btn-default btn-custom">
+                Animación 3D
+            </button>
+          </div>
+          <div class="tab-item-custom">
+            <img class="" src="resources/imgs/menu/morphing-2.gif" alt="" width="80px">
+            <button id="animacion_morph" class="btn btn-large btn-default btn-custom">
+                Morphing
+            </button>
+          </div>
+          <div class="tab-item-custom-2">
+            <img src="resources/imgs/menu/herramientas.png" alt="" width="40px">
+            <button id="software" class="btn btn-large btn-default btn-custom">
+                Software
+            </button>
+          </div>
+          <div class="tab-item-custom">
+            <img src="resources/imgs/menu/help.png" alt="" width="43px">
+            <button id="help" class="btn btn-large btn-default btn-custom">
+                Ayuda
+            </button>
+          </div>
+
+        </div>
+
+        <div class="center-logo">
+          <img src="resources/imgs/logo.png" width="450" height="131"  alt="">
+        </div>
+
+
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 13</div>
+            <img src="resources/imgs/slideshow/1.jpg" class="center-slide size-imagen">
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 13</div>
+            <img src="resources/imgs/slideshow/2.jpg"  class="center-slide size-imagen">
+
+<!--            <div class="text">Conoce las herramientas de animación</div> -->
+
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 11</div>
+            <img src="resources/imgs/slideshow/3.jpg"  class="center-slide size-imagen">
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">4 / 11</div>
+            <img src="resources/imgs/slideshow/4.jpg"  class="center-slide size-imagen">
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">5 / 11</div>
+            <img src="resources/imgs/slideshow/5.jpg"  class="center-slide size-imagen">
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">6 / 11</div>
+            <img src="resources/imgs/slideshow/6.jpg"  class="center-slide size-imagen">
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">7 / 11</div>
+            <img src="resources/imgs/slideshow/7.jpg"  class="center-slide size-imagen">
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">8 / 11</div>
+            <img src="resources/imgs/slideshow/8.jpg"  class="center-slide size-imagen">
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">9 / 11</div>
+            <img src="resources/imgs/slideshow/9.jpg"  class="center-slide size-imagen">
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">10 / 11</div>
+            <img src="resources/imgs/slideshow/10.jpg"  class="center-slide size-imagen">
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">11 / 11</div>
+            <img src="resources/imgs/slideshow/11.jpg"  class="center-slide size-imagen">
+          </div>
+
+
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+<!--
+        <div style="text-align:center; margin-left:5%;">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+          <span class="dot" onclick="currentSlide(6)"></span>
+          <span class="dot" onclick="currentSlide(7)"></span>
+          <span class="dot" onclick="currentSlide(8)"></span>
+          <span class="dot" onclick="currentSlide(9)"></span>
+          <span class="dot" onclick="currentSlide(10)"></span>
+          <span class="dot" onclick="currentSlide(11)"></span>
+        </div>
+-->
+
+      </div>
+
+      </div>
+
+
+
+      <div class="bottom" text-align="center">
+        <div class="row">
+          <div class="tab-group center-div">
+
+            <div class="tab-item-custom-2">
+              <img class="" src="resources/imgs/menu/test.gif" alt="" width="80px">
+              <button id="test" class="btn btn-large btn-default btn-custom">
+                  Test
+              </button>
+            </div>
+
+            <div class="tab-item-custom">
+              <img src="resources/imgs/menu/link.png" alt="" width="50px" style="margin-top:10px;">
+              <button id="links" class="btn btn-large btn-default btn-custom" style="margin-top:15px;">
+                  Links
+              </button>
+            </div>
+
+            <div class="tab-item-custom-2">
+              <img src="resources/imgs/menu/glosario.png" alt="" width="50px" style="margin-top:10px;">
+              <button id="glosario" class="btn btn-large btn-default btn-custom" style="margin-top:15px;">
+                  Glosario
+              </button>
+            </div>
+
+            <div class="tab-item-custom">
+              <img src="resources/imgs/menu/creditos.png" alt="" width="50px" style="margin-top:10px;">
+              <button id="creditos" class="btn btn-large btn-default btn-custom" style="margin-top:15px;">
+                  Creditos
+              </button>
+            </div>
+
+          </div>
+
+          <div class="" align="right" style="margin-right:2%;">
+            <img id="salir" src="resources/imgs/menu/exit.png" alt="" width="60px">
+  <!--          <button class="btn btn-large btn-negative">
+              Salir
+          </button>
+        -->
+        </div>
+
+        </div>
+
+    </div>
+
   </body>
+
+  <script src="js/slideshow.js" charset="utf-8"></script>
+  <script>
+
+    var ipcRenderer = require('electron').ipcRenderer;
+    var btn2d = document.querySelector('#animacion_2d')
+    var btn3d = document.querySelector('#animacion_3d')
+    var btnMorph = document.querySelector('#animacion_morph')
+    var btnSoftware = document.querySelector('#software')
+    var btnAyuda = document.querySelector('#help')
+    var btnTest = document.querySelector('#test')
+    var btnCreditos = document.querySelector('#creditos')
+    var btnLinks = document.querySelector('#links')
+    var btnGlosario = document.querySelector('#glosario')
+    var btnSalir = document.querySelector('#salir')
+
+    btn2d.addEventListener('click', function (e) {
+     e.preventDefault()
+     ipcRenderer.send('animacion2d')
+    })
+
+    btn3d.addEventListener('click', function (e) {
+     e.preventDefault()
+     ipcRenderer.send('animacion3d')
+    })
+
+    btnMorph.addEventListener('click', function (e) {
+     e.preventDefault()
+     ipcRenderer.send('morphing')
+    })
+
+    btnSoftware.addEventListener('click', function (e) {
+     e.preventDefault()
+     ipcRenderer.send('software')
+    })
+
+    btnAyuda.addEventListener('click', function (e) {
+     e.preventDefault()
+     ipcRenderer.send('ayuda')
+    })
+
+    btnTest.addEventListener('click', function (e) {
+      e.preventDefault()
+      ipcRenderer.send('test')
+    })
+
+    btnCreditos.addEventListener('click', function (e) {
+      e.preventDefault()
+      ipcRenderer.send('creditos')
+    })
+
+    btnLinks.addEventListener('click', function (e) {
+      e.preventDefault()
+      ipcRenderer.send('links')
+    })
+
+    btnGlosario.addEventListener('click', function (e) {
+      e.preventDefault()
+      ipcRenderer.send('glosario')
+    })
+
+    btnSalir.addEventListener('click', function (e) {
+     e.preventDefault()
+     ipcRenderer.send('salir')
+    })
+
+  </script>
 </html>

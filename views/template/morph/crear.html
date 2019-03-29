@@ -1,0 +1,70 @@
+<center>
+  <div class="well titulo-top">
+    <h1>Morphing</h1>
+    <input id="titulo" type="text" hidden="hidden" name="" value="morph">
+  </div>
+  <div class="well-medium" style="margin-bottom:3%;">
+    <h2 id="subtitulo">Crear morphing utilizando Warping</h2>
+  </div>
+
+    <!-- Contenido interior-->
+    <b class="blanco font-subtitulo"><p>Sofware a utilizar: </p></b><p class="blanco font-subtitulo">WinMorph</p>
+
+    <div class="" style="margin-left:6%;">
+      <div id="texto-inner" class=" background-blanco negro div-inner-text round-border">
+Este efecto transforma una imagen en otra utilizando puntos de metamorfosis o líneas de metamorfosis. Estos puntos son marcadores que posicionas al inicio de la imagen y al final. Después el programa utilizado calcula como la imagen debe de ser estirada (Warp) para lograr la imagen deseada, el único problema es que las imágenes deben de tener una forma muy similar para que el efecto sea realista.
+      </div>
+      <div class="background-blanco negro img-inner round-border imagen-descriptiva">
+        <img id="imagen" src="../../resources/imgs/morph/win-morph.png" alt="" width="350">
+      </div>
+
+            <h2 class="blanco">1.- Agregar los puntos de metamorfosis de las imagenes inicial y resultante.</h2>
+      <div id="texto-inner" class=" background-blanco negro div-inner-text round-border">
+        <center>
+          <img id="imagen" src="../../resources/imgs/morph/crear/1.png" alt="" width="600">
+        </center>
+      </div>
+
+      <h2 class="blanco">2.- Ahora con estas imagen tenemos los puntos totales que modificaremos.</h2>
+      <div id="texto-inner" class=" background-blanco negro div-inner-text round-border">
+        <center>
+          <img id="imagen" src="../../resources/imgs/morph/crear/2.png" alt="" width="600">
+        </center>
+      </div>
+
+      <h2 class="blanco">3.- Red tridimensional en puntos X y Y del contorno del rostro.</h2>
+      <div id="texto-inner" class=" background-blanco negro div-inner-text round-border">
+        <center>
+          <img id="imagen" src="../../resources/imgs/morph/crear/3.png" alt="" width="600">
+        </center>
+      </div>
+
+      <h2 class="blanco">4.- Warping de las imagenes con esta red de puntos.</h2>
+      <div id="texto-inner" class=" background-blanco negro div-inner-text round-border">
+        <center>
+          <img id="imagen" src="../../resources/imgs/morph/crear/4.png" alt="" width="600">
+          <hr>
+          <img id="imagen" src="../../resources/imgs/morph/crear/5.png" alt="" width="600">
+        </center>
+      </div>
+
+      <h2 class="blanco">5.- Ejemplo de un resultado final utilizando otras imágenes.</h2>
+      <div id="texto-inner" class=" background-blanco negro div-inner-text round-border">
+        <center>
+          <img id="imagen" src="../../resources/imgs/morph/crear/6.png" alt="" width="900">
+        </center>
+      </div>
+
+      <hr>
+
+      <center>
+        <button id="res_2d" onclick="mostrar()" class="btn btn-default btn-lg" type="button" name="button">Ver resultado</button>
+      </center>
+
+
+
+      <div style="height:100px;">
+
+      </div>
+    </div>
+  </center>

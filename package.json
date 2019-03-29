@@ -1,22 +1,29 @@
 {
-  "name": "electron-quick-start",
+  "name": "enciclopedia-animacion",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
-  "main": "main.js",
+  "description": "Animación: Enciclopedia Multimedia",
+  "main": "app.js",
+  "author": "MG08",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "package-mac": "electron-packager . enciclopedia-animacion --platform=darwin --arch=x64 --icon=resources/icons/mac/icon.icns --prune=true --overwrite --out=../release-builds",
+    "package-win32": "electron-packager . enciclopedia-animacion --overwrite --asar=true --platform=win32 --arch=ia32 --icon=resources/icons/win/icon.ico --prune=true --out=../release-builds --version-string.CompanyName=MG --version-string.FileDescription=MG --version-string.ProductName=\"Animacion: Enciclopedia Multimedia\"",
+    "package-win64": "electron-packager . enciclopedia-animacion --overwrite --asar=true --platform=win32 --arch=x64 --icon=resources/icons/win/icon.ico --prune=true --out=../release-builds --version-string.CompanyName=MG --version-string.FileDescription=MG --version-string.ProductName=\"Animacion: Enciclopedia Multimedia\"",
+    "package-deb": "electron-packager . enciclopedia-animacion --overwrite --asar=true --platform=linux --arch=x64 --icon=resources/icons/png/128x128.png --prune=true --out=../release-builds",
+    "create-installer-mac": "electron-installer-dmg ../release-builds/enciclopedia-animacion-darwin-x64/enciclopedia-animacion.app enciclopedia-animacion --out=../release-builds --overwrite --icon=resources/icons/mac/icon.icns",
+    "create-installer-win": "node installers/windows/createinstaller.js",
+    "create-installer-deb": "electron-installer-debian --src ../release-builds/enciclopedia-animacion-linux-x64/ --arch amd64 --config installers/debian/debian.json"
   },
-  "repository": "https://github.com/electron/electron-quick-start",
-  "keywords": [
-    "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
-  ],
-  "author": "GitHub",
-  "license": "CC0-1.0",
+  "dependencies": {
+    "menu": "^0.2.5",
+    "menuitem": "0.0.5",
+    "remote": "^0.2.6"
+  },
   "devDependencies": {
-    "electron": "~1.7.8"
+    "electron": "^1.7.9",
+    "electron-installer-debian": "^0.7.1",
+    "electron-installer-dmg": "^0.2.1",
+    "electron-packager": "^10.1.0",
+    "electron-winstaller": "^2.6.3"
   }
 }

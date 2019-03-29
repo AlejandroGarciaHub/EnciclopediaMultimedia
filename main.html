@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/custom.css">
+    <title>Inicio</title>
+  </head>
+  <body class="background-green">
+
+    <div class="inner">
+      <img class="round-border" src="resources/main/header.jpg" alt="">
+      <div class="blanco">
+        <h1 style="text-align:center;">Ingeniería en Sistemas Computacionales</h1>
+        <h2 style="text-align:center;">Programación Multimedia</h2>
+        <h2 style="text-align:center;">ENCICLOPEDIA MULTIMEDIA</h2>
+        <h2 style="text-align:center;">ANIMACIÓN</h2>
+
+      </div>
+
+      <center class="background-blanco round-border">
+        <img id="index" src="resources/imgs/main_logo_crop.gif" alt="" width="250px">
+      </center>
+
+      <div class="blanco">
+              <h2 style="text-align:center;">Asesor: Ing. José Lino Hernández Omaña</h2>
+
+              <h2 style="text-align:left; float:left;">Cd. Victoria, Tamaulipas</h2>
+              <h2 style="text-align:right; float:right;">NOVIEMBRE 2017</h2>
+
+      </div>
+<!--      <hr style="clear:both;"/>
+-->
+    </div>
+  </body>
+
+  <script>
+
+    var ipcRenderer = require('electron').ipcRenderer;
+    var btnIndex = document.querySelector('#index')
+
+    btnIndex.addEventListener('click', function (e) {
+     e.preventDefault()
+     ipcRenderer.send('index')
+    })
+
+  </script>
+
+</html>
