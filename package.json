@@ -20,7 +20,7 @@
     "remote": "^0.2.6"
   },
   "devDependencies": {
-    "electron": "^1.7.9",
+    "electron": "^22.3.25",
     "electron-installer-debian": "^0.7.1",
     "electron-installer-dmg": "^0.2.1",
     "electron-packager": "^10.1.0",
