@@ -24,6 +24,6 @@
     "electron-installer-debian": "^0.7.1",
     "electron-installer-dmg": "^4.0.0",
     "electron-packager": "^17.1.2",
-    "electron-winstaller": "^2.6.3"
+    "electron-winstaller": "^5.1.0"
   }
 }
